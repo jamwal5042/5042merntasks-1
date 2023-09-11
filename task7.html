@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAKS-2 CSS</title>
+    <style>
+        .navbarvertical
+        {
+            display: flex;
+            border: 1px solid black;
+            width: 200px;
+            height: 250px;
+            align-items: center;
+        }
+
+        .navbarvertical > div
+        {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .navbarvertical a
+        {
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+        }
+
+        .vertical-nav-inner
+        {
+            padding: 10px 10px;
+        }
+
+        .vertical-nav-inner:hover
+        {
+            background-color: orange;
+            color: white;
+        }
+
+        .navbarvertical a:hover
+        {
+            color: white;
+        }
+
+        .navbarhorizontal
+        {
+            display: flex;
+            border: 1px solid black;
+            width: 500px;
+            height: 70px;
+            align-items: center;
+        }
+
+        .navbarhorizontal > div
+        {
+            display: flex;
+            margin-left: 10px;
+            width: 500px;
+            align-items: center;
+        }
+
+        .navbarhorizontal a
+        {
+            font-size: 20px;
+            padding: 15px;
+            color: blue;
+            text-decoration: none;
+        }
+        
+        .navbarhorizontal a:hover
+        {
+            background-color: grey;
+            color: white;
+        }
+
+        .vertical-line
+        {
+            width: 1px;
+            height: 55px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Vertical Navigation Bar</h4>
+    <div class="navbarvertical">
+        <div style="background-color: rgb(145, 223, 242); height: 240px; width: 180px;">
+            <div class="vertical-nav-inner"><a href="#">Home</a></div>
+            <div class="vertical-nav-inner"><a href="#">Java</a></div>
+            <div class="vertical-nav-inner"><a href="#">CSS</a></div>
+            <div class="vertical-nav-inner"><a href="#">HTML</a></div>
+            <div class="vertical-nav-inner"><a href="#">Bootstrap</a></div>
+        </div>
+    </div>
+    <br>
+    <h4>Horizontal Navigation Bar</h4>
+    <div class="navbarhorizontal">
+        <div style="background-color: rgb(203, 201, 201); height: 55px;">
+            <div><a href="#">Home</a></div>
+            <span class="vertical-line"></span>
+            <div><a href="#">Java</a></div>
+            <span class="vertical-line"></span>
+            <div><a href="#">HTML</a></div>
+            <span class="vertical-line"></span>
+            <div><a href="#">CSS</a></div>
+            <span class="vertical-line"></span>
+            <div><a href="#">Bootstrap</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
